@@ -13,11 +13,10 @@
 
 %hook MPUAVRouteHeaderView
 
-- (void)layoutSubviews
-{
-
-  self.hidden = YES;
-  self.alpha = 0.0;
+- (void)layoutSubviews {
+   %orig;
+   self.hidden = YES;
+   self.alpha = 0.0;
 
 }
 
@@ -30,11 +29,10 @@
 
 %hook MPUEmptyNowPlayingView
 
-- (void)layoutSubviews
-{
-
-  self.hidden = YES;
-  self.alpha = 0;
+- (void)layoutSubviews {
+   %orig;
+   self.hidden = YES;
+   self.alpha = 0;
 
 }
 
